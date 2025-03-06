@@ -1,4 +1,4 @@
-Feature: The Internet Guinea Pig Website
+Feature: QuickBase Project Management Home Website
 
   Scenario: Verify the Project Manager Home page loads successfully
     Given I open the Project Management app with user login details "rajesh130195@gmail.com" and "UmFqZXNoQDEyMzQ1"

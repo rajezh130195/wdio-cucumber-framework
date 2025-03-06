@@ -36,11 +36,15 @@ When('I click on the {string} button', async (labelValue) => {
 When('User switches to new project creation tab', async () => {
     console.log("Test Value")
     const handles = await browser.getWindowHandles();
-    await browser.switchToWindow(handles[3]); // Switch to the second tab
+    //await browser.switchToWindow(handles[3]); // Switch to the second tab
 })
 
 When('User enters all the project details', async () => {
     //await QuickbasePage.labelInputValue("Project Name", "SAMPLE_AUTOMATION_PROJECT");
+})
+
+When('I send a {string} request to {string}', (s, s2) => {
+  // Write code here that turns the phrase above into concrete actions
 })
 
 
