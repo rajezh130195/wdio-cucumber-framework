@@ -4,12 +4,15 @@ const { expect, $ } = require('@wdio/globals')
 const LoginPage = require('../pageobjects/login.page');
 const QuickbasePage = require('../pageobjects/quickbase.page');
 const Page = require('../pageobjects/page');
+const globalData = require('../utils/global');
 
 Given('I open the Project Management app with user login details {string} and {string}', async (username, password) => {
     await Page.open();
     await LoginPage.btnNo.click();
     const decryptpwd = Buffer.from(password, 'base64').toString('utf8');
     console.log("Password Value +++++++"+decryptpwd);
+    globalData.userCredentials.username = username;
+    globalData.userCredentials.password = decryptpwd;
     await LoginPage.login(username, decryptpwd);
     await LoginPage.validationScreen();
 })
