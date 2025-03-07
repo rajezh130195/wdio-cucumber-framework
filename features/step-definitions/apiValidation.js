@@ -9,8 +9,8 @@ let apiResponse;
 When('I send a {string} request to API Autenticate', async (method) => {
     const inputUsername = globalData.userCredentials.username;
     const inputPassword = globalData.userCredentials.password;
-    let url = `https://target_domain/db/main?a=API_Authenticate&username=${inputUsername}&password=${inputPassword}&hours=24`;
-    apiResponse = await APIHelper.sendRequest(method, url)
+    let url = 'https://api.quickbase.com/v1/';
+    apiResponse = APIHelper.getTemporaryToken(dbid);
 })
 
 Then(/^the API response status should be (\d+)$/, async (expectedStatus) => {
