@@ -2,7 +2,7 @@ const { When, Then } = require('@wdio/cucumber-framework');
 const APIHelper = require('../utils/restUtils');
 const assert = require('assert');
 const UISteps = require('./steps');
-const globalData = require('../utils/global');
+const globalData = require('../utils/globalutils');
 
 const { inputUsername, inputPassword } = require('../pageobjects/login.page');
 

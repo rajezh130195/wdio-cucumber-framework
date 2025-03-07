@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 class RESTUtils {
-    async performRequest(method, url, data = {}, headers = {"Content-Type": "application/xml", "username":"", "password":""}){
+    static async sendRequest(method, url, data = {}, headers = {"Content-Type": "application/xml"}){
         try {
             const response = await axios({
                 method,

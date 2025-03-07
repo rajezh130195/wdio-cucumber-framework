@@ -4,7 +4,7 @@ const { expect, $ } = require('@wdio/globals')
 const LoginPage = require('../pageobjects/login.page');
 const QuickbasePage = require('../pageobjects/quickbase.page');
 const Page = require('../pageobjects/page');
-const globalData = require('../utils/global');
+const globalData = require('../utils/globalutils');
 
 Given('I open the Project Management app with user login details {string} and {string}', async (username, password) => {
     await Page.open();
