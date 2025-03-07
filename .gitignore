@@ -1,4 +1,5 @@
-allure-results/c5ee8857-6de3-46de-89d5-3b9a6e6a247d-attachment.txt
-allure-results/f7d649ad-c5b8-4f3e-9f75-6c669c658d5c-result.json
-*.json
-*.json
+*.txt
+*.html
+allure-results/*.json
+allure-results/*.txt
+allure-results/*.json
