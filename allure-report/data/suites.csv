@@ -1,3 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","54320","Verify the Project Manager Home page loads successfully","","Thu Mar 06 21:08:49 IST 2025","passed","Thu Mar 06 21:09:43 IST 2025","","The Internet Guinea Pig Website","",""
-"","10074","Create a new project in Project Management Home Screen","","Thu Mar 06 21:09:43 IST 2025","broken","Thu Mar 06 21:09:53 IST 2025","","The Internet Guinea Pig Website","",""
+"","51519","Verify the Project Manager Home page loads successfully","","Fri Mar 07 05:44:38 IST 2025","passed","Fri Mar 07 05:45:29 IST 2025","","QuickBase Project Management Home Website","",""
+"","5","Validate GET request for fetching projects","","Fri Mar 07 05:44:38 IST 2025","broken","Fri Mar 07 05:44:38 IST 2025","","API Validation for the quickbase backend validation","",""
+"","10079","Create a new project in Project Management Home Screen","","Fri Mar 07 05:45:29 IST 2025","broken","Fri Mar 07 05:45:39 IST 2025","","QuickBase Project Management Home Website","",""

@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 class RESTUtils {
-    static async sendRequest(method, url, data = {}, headers = {"Content-Type": "application/xml"}){
+    async sendRequest(method, url, data = {}, headers = {"Content-Type": "application/xml"}){
         try {
             const response = await axios({
                 method,
@@ -10,7 +10,7 @@ class RESTUtils {
                 headers,
                 params
             });
-            return response;
+            return response.data;
         } catch (error) {
             console.error(`API Request Failed: ${error.response ? error.response.data : error.message}`);
             throw error;
