@@ -21,4 +21,4 @@ class RESTUtils {
     }
 }
 
-module.exports = RESTUtils();
+module.exports = new RESTUtils();
